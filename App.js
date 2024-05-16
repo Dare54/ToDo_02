@@ -25,12 +25,19 @@ export default function App() {
     return (
       <View /*style={styles.container}*/>
       
-      <ScrollView
-        contentContainerStyle={{
-          flexGrow: 1
-        }}
-        keyboardShouldPersistTaps='handled'
-      ></ScrollView>
+        <ScrollView
+          contentContainerStyle={{
+            flexGrow: 1
+          }}
+          keyboardShouldPersistTaps='handled'
+        >
+
+        <View /*style={styles.tasksWrapper}*/>
+          <Text /*style={styles.sectionTitle}*/>Today's tasks</Text>
+          <View /*style={styles.items}*/>
+          </View>
+        </View>
+        </ScrollView>
       </View>
     );
   }

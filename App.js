@@ -32,11 +32,21 @@ export default function App() {
           keyboardShouldPersistTaps='handled'
         >
 
-        <View /*style={styles.tasksWrapper}*/>
-          <Text /*style={styles.sectionTitle}*/>Today's tasks</Text>
-          <View /*style={styles.items}*/>
+        <View style={styles.tasksWrapper}>
+          <Text style={styles.sectionTitle}>Today's tasks</Text>
+          <View style={styles.items}>
+            {
+              taskItems.map((item, index) => {
+                return (
+                  <TouchableOpacity>
+                    <Task text={item} />
+                  </TouchableOpacity>
+                )
+              })
+            }
           </View>
         </View>
+
         </ScrollView>
 
         <KeyboardAvoidingView>
@@ -53,3 +63,10 @@ export default function App() {
       </View>
     );
   }
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#E8EAED',
+    },
+  });

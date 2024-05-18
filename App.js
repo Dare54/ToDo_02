@@ -39,12 +39,15 @@ export default function App() {
         </View>
         </ScrollView>
 
-        <TextInput/>
-        <TouchableOpacity>
-        <View>
-            <Text>+</Text>
-          </View>
-        </TouchableOpacity>
+        <KeyboardAvoidingView>
+          <TextInput/>
+          <TouchableOpacity>
+            <View>
+              <Text>+</Text>
+            </View>
+          </TouchableOpacity>
+        </KeyboardAvoidingView>
+       
           
           
       </View>

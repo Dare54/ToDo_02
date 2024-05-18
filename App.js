@@ -38,6 +38,15 @@ export default function App() {
           </View>
         </View>
         </ScrollView>
+
+        <TextInput/>
+        <TouchableOpacity>
+        <View>
+            <Text>+</Text>
+          </View>
+        </TouchableOpacity>
+          
+          
       </View>
     );
   }
